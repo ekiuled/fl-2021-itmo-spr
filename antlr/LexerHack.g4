@@ -35,7 +35,7 @@ grammar LexerHack;
     static Set<String> types = new HashSet<String>();
 }
 
-parse locals []: (stat ';')+ EOF;
+parse: (stat ';')+ EOF;
 stat: decl | expr;
 decl: 'typename' ID             { types.add($ID.text); };
 expr: '(' TYPE ')' expr         { System.out.println("typecast"); }
