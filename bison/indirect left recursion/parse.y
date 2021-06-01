@@ -10,18 +10,11 @@
     } 
 %}
 
-%token ID PLUS LBR RBR
+%token T
 
 %%
 
-expr:
-  term
-| term PLUS term
-;
-
-term:
-  ID
-| LBR expr RBR
-;
+s: u T;
+u: s T |;
 
 %%

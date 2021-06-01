@@ -6,10 +6,6 @@
 
 %%
 
-[a-z]+      { return ID; }
-\+          { return PLUS; }
-\(          { return LBR; }
-\)          { return RBR; }
-[:space:]   ;
+t   { return T; }
 
 %%

@@ -7,7 +7,6 @@
 
 grammar IndirectLeftRecursion;
 
-s: e u t;
-u: e s t;
-e: 'e'*;
-t: 't';
+s: u T;
+u: s T |;
+T: 't';
