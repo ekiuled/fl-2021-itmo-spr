@@ -37,7 +37,7 @@
 
 prog:
   %empty
-| prog stmt   { printf ("\n"); }
+| prog stmt                         { std::cout << std::endl; }
 ;
 
 stmt:
