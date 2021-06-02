@@ -41,6 +41,7 @@
 
 %token TYPENAME ID LBR RBR SEP MUL
 %type<str> TYPENAME ID LBR RBR SEP MUL
+%left MUL
 
 %glr-parser
 
